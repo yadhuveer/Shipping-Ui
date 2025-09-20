@@ -1,4 +1,4 @@
-import Link from "next/link";
+/*import Link from "next/link";
 import { Ship, Info, Home, Navigation, Mail, Clock, User } from 'lucide-react';
 
 export const NavBar = () => {
@@ -6,7 +6,7 @@ export const NavBar = () => {
         <>
             <nav className="flex flex-row justify-between w-full px-6 py-4 z-50 bg-black/20 backdrop-blur-xl border-b border-white/10 shadow-lg">
                 
-                {/* Logo Section */}
+                {/* Logo Section *
                 <div className="flex flex-row items-center space-x-3">
                     <div className="p-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg shadow-lg">
                         <Ship className="h-6 w-6 text-white" />
@@ -17,7 +17,7 @@ export const NavBar = () => {
                     </div>
                 </div>
 
-                {/* Navigation Links */}
+                {/* Navigation Links *
                 <div className="flex flex-row items-center space-x-8">
                     <Link href="#" className="group flex items-center space-x-2 text-white/80 hover:text-white transition-all duration-300">
                         <Home className="h-4 w-4 group-hover:scale-110 transition-transform" />
@@ -37,7 +37,7 @@ export const NavBar = () => {
                     </Link>
                 </div>
 
-                {/* Timer & Login Section */}
+                {/* Timer & Login Section *
                 <div className="flex flex-row items-center space-x-6">
                     <div className="flex items-center space-x-2 text-white/70">
                         <Clock className="h-4 w-4" />
@@ -53,4 +53,4 @@ export const NavBar = () => {
             </nav>
         </>
     )
-}
+}*/

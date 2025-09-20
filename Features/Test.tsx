@@ -1,4 +1,4 @@
-# Retrain component (JSX) + server proxy
+/* Retrain component (JSX) + server proxy
 
 This document contains a plain **JSX** (JavaScript) client component you can drop into your Next.js project and a server-side API proxy for the App Router. The client component expects the page server component (your `page.tsx`) to optionally pass the initial data as `data` prop. The component handles responsive pagination, selection/deselection, and sending selected IDs to the backend.
 
@@ -18,7 +18,7 @@ import React, { useEffect, useState } from 'react'
  * - initialPage: optional starting page number
  * - initialTotal: optional total count from server
  * - apiEndpoint: optional internal API endpoint (defaults to '/api/retrain')
- */
+ *
 export default function Retrain({ data: serverData = null, initialPage = 1, initialTotal = 0, apiEndpoint = '/api/retrain' }) {
   const [data, setData] = useState(Array.isArray(serverData) ? serverData : [])
   const [page, setPage] = useState(initialPage)
@@ -200,7 +200,7 @@ export default function Retrain({ data: serverData = null, initialPage = 1, init
         </div>
       )}
 
-      {/* Pager controls */}
+      {/* Pager controls *
       <div className="mt-6 flex justify-center items-center gap-2">
         <button onClick={() => setPage(1)} disabled={page === 1} className="px-2 py-1 border rounded">First</button>
         <button onClick={() => setPage(p => Math.max(1, p - 1))} disabled={page === 1} className="px-2 py-1 border rounded">Prev</button>
@@ -307,4 +307,4 @@ If you want, I can now:
 - Provide a `pages/api/retrain.ts` variant if you're using the Pages Router.
 - Add a small confirmation modal or a toast instead of `alert()`.
 
-Tell me which of the above you'd like and I'll add it to this document.
+Tell me which of the above you'd like and I'll add it to this document.*/
